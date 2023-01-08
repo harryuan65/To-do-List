@@ -1,3 +1,6 @@
 [submodule "frontends/react_cra"]
 	path = frontends/react_cra
 	url = https://github.com/harryuan65/to-do-list-react.git
+[submodule "backends/rails"]
+	path = backends/rails
+	url = https://github.com/harryuan65/to-do-list-api-rails.git
