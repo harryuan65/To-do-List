@@ -5,3 +5,6 @@ Maybe one day I want to learn a new programming language or a new framework, and
 ## Spec
 
 Please refer to `/docs`.
+
+![UI](docs/ui.png)
+![Schema](docs/schema.png)
