@@ -4,3 +4,6 @@
 [submodule "backends/rails"]
 	path = backends/rails
 	url = https://github.com/harryuan65/to-do-list-api-rails.git
+[submodule "backends/express"]
+	path = backends/express
+	url = https://github.com/harryuan65/to-do-list-api-express
