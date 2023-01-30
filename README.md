@@ -5,11 +5,3 @@ Maybe one day I'll want to learn a new programming language or a new framework, 
 ## Spec
 
 Please refer to `/docs`.
-
-## Front End
-
-![UI](docs/ui.png)
-
-## Back End
-
-![DB-Schema](docs/db-schema.png)

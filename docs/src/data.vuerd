@@ -44,7 +44,7 @@
     "tables": [
       {
         "name": "to_do_item",
-        "comment": "some tasks to be done",
+        "comment": "",
         "columns": [
           {
             "name": "id",
@@ -94,7 +94,7 @@
           },
           {
             "name": "status",
-            "comment": "",
+            "comment": "or \"done\"",
             "dataType": "varchar",
             "default": "\"active\"",
             "option": {
@@ -117,12 +117,12 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 200,
+          "active": true,
+          "left": 199,
           "top": 100,
-          "zIndex": 13,
+          "zIndex": 12,
           "widthName": 68.741943359375,
-          "widthComment": 120
+          "widthComment": 60
         },
         "visible": true,
         "id": "681e6793-1041-4ade-933f-6f0aa7a20a3a"
