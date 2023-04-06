@@ -1,0 +1,29 @@
+#!/opt/homebrew/bin/bash
+
+IFS=":" read -ra frontargs <<<$1
+frontend_name=${frontargs[0]}
+frontend_cmd=${frontargs[1]}
+
+IFS=":" read -ra backargs <<<$2
+backend_name=${backargs[0]}
+backend_cmd=${backargs[1]}
+
+frontend_dir=frontends/$frontend_name
+backend_dir=backends/$backend_name
+
+if [ ! -d $frontend_dir ]; then
+  echo "$frontend_dir does not exist."
+  exit 1
+fi
+
+if [ ! -d $backend_dir ]; then
+  echo "$backend_dir does not exist."
+  exit 1
+fi
+
+echo -e "Using \e[34m frontend: \e[33m$frontend_name\e[0m, \e[34m backend: \e[33m$backend_name\e[0m"
+
+yarn_exec="yarn --cwd"
+
+$yarn_exec $frontend_dir install && $yarn_exec $backend_dir install
+yarn concurrently "$yarn_exec $frontend_dir $frontend_cmd" "$yarn_exec $backend_dir $backend_cmd"
